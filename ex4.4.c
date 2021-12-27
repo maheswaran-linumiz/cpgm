@@ -25,7 +25,8 @@ int main(void)
        case NUMBER:
        push(atof(s));
          break;
-       case '+':							               push(pop()+pop());
+	 case '+':
+         push(pop()+pop());
         break;
         case '*':
         push(pop()*pop());
