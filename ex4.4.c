@@ -1,4 +1,4 @@
-			//RPN Calculator with mathematical functions
+			// RPN Calculator - print two top elements of the stack without popping
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -127,8 +127,8 @@ int getop(char s[])
  else
    {
    if(c!=EOF)
-										    ungetch(c);
-									           return '-';
+  ungetch(c);
+  return '-';
 	        }
 			    
   if(isdigit(c))
